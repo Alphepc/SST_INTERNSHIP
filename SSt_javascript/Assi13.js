@@ -4,13 +4,14 @@ const readline = require("readline") .createInterface({
 });
 readline.question("Give the range to print even number ", (n) => {
     var num=parseInt(n)
-    for (i=1; i<num;i++)
+    let i=1;
+    while (i<=num)
         {
             if (i%2==0)
                 {
                     console.log(i)
                 }
-
+                i++
         
             }
             readline.close();

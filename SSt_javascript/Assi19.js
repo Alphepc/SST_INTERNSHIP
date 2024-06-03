@@ -7,15 +7,3 @@ for (i=0;i<=5;i++){
     }
     console.log(star)
 }
-readline.log("Enter the first word",(fw) => {
-    readline.log("Enter the second number ",(sw) =>{
-       if (fw==sw){
-        console.log("both are same "+fw)
-       else {
-        console.log("both are same "+sw)
-       }
-        
-        readline.close();
-       }
-    })
-})
