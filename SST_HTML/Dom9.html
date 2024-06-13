@@ -1,0 +1,74 @@
+<html>
+<head>
+    <script>
+        function vaildate()
+        {
+            var name=document.getElementById("name").value;
+            if(name==""){
+               // document.write("Enter name")
+               document.getElementById("l1").innerHTML="Enter Name";
+               letters=/^[a-zA-Z\s]+$/;
+
+
+            document.getElementById("l2").innerHTML="Enter Age";
+            
+            }
+            else if(letters.test(name)==false)
+            {
+                document.getElementById("l1").innerHTML="Enter Correct Alphabets";
+            }
+         if(password ==""){
+            
+            document.getElementById("l3").innerHTML="Enter password"
+        }
+
+            else if(password.length<8)
+            {
+                document.getElementById("l3").innerHTML="More than 8 character";
+            }
+
+            
+
+           
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table border="0">
+            <td>
+                Name 
+            </td>
+            <td>
+                <input type="text" name="name" id="name"><br>
+                <label style="color: red;" id="l1"></label>
+                
+            </td>
+            <td>
+                Age
+            </td>
+            <td>
+                <input type="text" name="name" id="age"><br>
+                <label style="color: red;"  id="l2"></label>
+                
+                
+            </td>
+            <td>
+                Password
+            </td>
+            <td>
+                <input type="text" name="name" id="password"><br>
+            
+                <label style="color: red;"  id="l3"></label>
+                <td><input type="button"  value="SUMBIT" onclick="vaildate()"></td>
+                
+            </td>
+
+            
+         
+        </table>
+    </form>
+    
+</body>
+</html>
